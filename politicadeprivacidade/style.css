@@ -4,3 +4,10 @@
 .brand-logo{display:block;width:145px;max-width:100%;height:58px;object-fit:contain;object-position:left center}
 @media(max-width:600px){.brand-logo{width:112px;height:48px}}
 .contact a{color:inherit;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+
+/* Cabeçalho preto solicitado — mantém a logo oficial visível */
+header.top{background:#080a0d;max-width:none;padding-left:max(38px,calc((100% - 1184px)/2));padding-right:max(38px,calc((100% - 1184px)/2))}
+header.top .toplink{color:#fff;border-color:#444a50}
+header.top .toplink:hover{background:#24282d}
+header.top .brand-logo{filter:brightness(0) invert(1)}
+@media(max-width:850px){header.top{padding-left:22px;padding-right:22px}}
