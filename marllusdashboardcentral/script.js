@@ -1,5 +1,5 @@
 
-const APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbwFXcpzH8RvxLvKmEz7htEWqOPSzj431VngZUVdSptyIji5jH0Melx8K2M7BsuRXjETlw/exec';
+const APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbxqlLr_t4cq4dvqeutgKA6I1shKE0sBK-FdS9zC0jvwf6bK4qPvgbj_HHCGyYNq41xZIw/exec';
 let state={usuarios:[],banners:[],desafios:[],flashAds:[]},adminKey='';const KEY_STORAGE='urumove_admin_key_local_v1';const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));$('url').value=APPS_SCRIPT_URL;
 function forgetKey(){localStorage.removeItem(KEY_STORAGE);adminKey='';$('key').value='';notice('Chave esquecida neste navegador.')}
 let noticeTimer;function notice(s){$('notice').style.display='block';$('notice').textContent=s;clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>$('notice').style.display='none',6500)}
